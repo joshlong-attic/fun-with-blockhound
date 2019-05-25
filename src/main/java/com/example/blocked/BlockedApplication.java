@@ -36,7 +36,7 @@ public class BlockedApplication {
 	@EventListener(ApplicationReadyEvent.class)
 	public void go() {
 
-		Scheduler canBlock = Schedulers.elastic(); // not going to work with Blockhound
+		Scheduler canBlock = Schedulers.elastic(); // won't trigger Blockhound because these threads are not marked as `NonBlocking`
 
 		Scheduler canNotBlock = Schedulers.newParallel("p10", 10); // this will trigger Blockhound
 
