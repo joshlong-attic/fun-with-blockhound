@@ -7,7 +7,14 @@
 
 ## Ideas 
 
-* Reactor Debug Agent: `compile 'io.projectreactor:reactor-tools:$LATEST_RELEASE`
+* Reactor Debug Agent:  
+  ```
+  <dependency>
+      <groupId>io.projectreactor</groupId>
+      <artifactId>reactor-tools</artifactId>
+      <version>1.0.0.M1</version>
+  </dependency>
+  ```     
 
 * Use Blockhound by adding 
 
